@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    margin: 0px; /*We can move from top to bottom */
+    background-color: #b8c6db;  /*Reference: https://www.eggradients.com/?73afe765_page=3 */ 
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%); /*Reference: https://www.eggradients.com/?73afe765_page=3 */
+    min-height: 100vh;  /*Above image will strecth */
+    display: flex;      /*By this it will move into center of the page*/
+    justify-content: center; /*This is move center followed by flex */
+    align-items: center;      /*By this is we can see the behaviour in two div elemest followed by flex */
+}
+
+.quiz-container{
+    background-color: #f5f7fa;
+    border-radius: 10px;  /*By this corners of the box will get slightly round - CSS border-radius Property | Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner):*/
+    width: 500px;    /* Box width of first div element */
+    box-shadow: 0 0 10px 5px rgba(100,100,100,0.1);   /*By this outside corners of the box will get light shodow black color */
+    max-width: 100%;   /*Box size will may change */
+     overflow: hidden;   /* The overflow is clipped, and the rest of the content will be invisible */
+
+}
+
+.quiz-header{
+    padding: 2rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul li{
+    font-size:1.1rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+button{
+    background-color: #8e44ad;
+    color: white;
+    width: 100%;
+    padding: 1.3rem;
+    display: block;
+    font-family: inherit;
+    border:none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #550777;
+}
